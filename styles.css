@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background-color: #b11226;
+  color: white;
+  padding: 15px 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card-info div {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.card-info strong {
+  display: block;
+  font-size: 13px;
+  color: #666;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-view {
+  background: #0077cc;
+  color: white;
+}
+
+.btn-email {
+  background: #28a745;
+  color: white;
+}
+
+.btn-download {
+  background: #6c757d;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin: 30px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card-info {
+    grid-template-columns: 1fr;
+  }
+}
+.aha-footer {
+  background: #eef1f4;
+  padding: 30px 20px;
+  font-size: 13px;
+  color: #444;
+}
+
+.footer-sections {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-toggle {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  background: #777;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-links {
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a.cookies {
+  background: #b6d7a8;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-links {
+    font-size: 12px;
+  }
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.aha-logo {
+  width: 230px;
+  height: auto;
+}
+
+.logo-text span {
+  display: block;
+  line-height: 1.2;
+}
+
+/* Texto normal (NO rojo) */
+.aha-title {
+  font-size: 14px;
+  color: #333; /* negro/gris */
+}
+
+/* Texto rojo */
+.aha-subtitle {
+  font-size: 22px;
+  color: #f3ebec;
+  font-weight: bold;
+}
+
+/* Texto rojo pero más fino */
+.aha-subsubtitle {
+  font-size: 16px;
+  color: #eadcde;
+}
+/* ===== HEADER ROJO ===== */
+.aha-responsive-header {
+  background-color: #b11226;
+  padding: 30px 20px;
+}
+
+.aha-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* LOGO */
+.aha-logo-box img {
+  width: 260px;
+  max-width: 100%;
+  background: white;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+/* TEXTO */
+.aha-text-box {
+  color: white;
+}
+
+.aha-title {
+  display: block;
+  font-size: 16px;
+  color: #111;
+}
+
+.aha-main {
+  display: block;
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.aha-sub {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 900px) {
+  .aha-main {
+    font-size: 30px;
+  }
+
+  .aha-sub {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aha-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aha-logo-box img {
+    width: 220px;
+  }
+
+  .aha-title {
+    font-size: 14px;
+  }
+
+  .aha-main {
+    font-size: 26px;
+  }
+
+  .aha-sub {
+    font-size: 18px;
+  }
+}
+/* ===== BIENVENIDA ===== */
+
+.welcome-card {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px 20px;
+}
+
+.welcome-card h1 {
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.welcome-name {
+  color: #b11226; /* rojo institucional */
+}
+
+.welcome-card p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .welcome-card h1 {
+    font-size: 28px;
+  }
+
+  .welcome-card p {
+    font-size: 16px;
+  }
+}
+
+.btn-download {
+  display: inline-block;
+  background: #6c757d;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-download:hover {
+  opacity: 0.9;
+}
